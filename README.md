@@ -9,6 +9,15 @@ SASH is a replacement standard for MPEG DASH's manifest format. Its aims are to 
 
 SASH was born out of frustration of supporting many various and incomplete implementations of MPD parsers, and trying to build a reliable, simple, MSE friendly implementations of players.
 
+### Design Goals
+
+1. 100% less XML.
+2. Designed for MSE and native clients.
+3. Use the good parts of DASH. Skip the bad parts.
+4. One way to do things. Follow the Python approach (There should be one -- and preferably only one --obvious way to do it.) rather than the Perl approach (TMTOWTDI).
+5. Eliminate ambiguity. All client behavior should be defined. Client implementations should never guess.
+6. Usable and readable. Don't make developers think. 
+
 ### Examples
 
 * [Simple 1 Audio, 1 Video minimal manifest for VOD](sash-single-audio-single-video-vod-only.json) (The simplest SASH manifest feasible)
@@ -36,6 +45,12 @@ SASH was born out of frustration of supporting many various and incomplete imple
 * One manifest format for Live and VOD content, and no byteranges
 * Seperate Audio & Video representation sets
 
+### Is a new standard the solution?
+
+Always.
+
+See also [https://xkcd.com/927](https://xkcd.com/927/) and the election of [Antipope Alexander V](http://en.wikipedia.org/wiki/Antipope_Alexander_V).
+
 ### Is this a Joke?
 
-No, we're 100% serious.
+No. We are 100% serious.
