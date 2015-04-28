@@ -1,0 +1,113 @@
+{
+    "version" : 1,
+    "manifest_ttl": 2,
+    "duration": 207.958,
+    "video_sets" : [
+        {
+            "mime_type" : "video/mp4",
+            "segment_template" : {
+                "duration": 1.960,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number" : 980
+            },
+            "representations" : {
+                "c6a8533d-ff8f-437e-80d7-780f86a07ecd" : {
+                    "bandwidth": 400000,
+                    "codecs": "avc1.4d4015",
+                    "height": 240,
+                    "width": 426
+                },
+                "98bb279a-73bf-40b6-9c6a-f633ce8d2759" : {
+                    "bandwidth": 800000,
+                    "codecs": "avc1.4d401e",
+                    "height": 480,
+                    "width": 852
+                }
+            }
+        },
+        {
+            "role" : "Backstage",
+            "mime_type" : "video/mp4",
+            "segment_template" : {
+                "duration": 1.960,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number" : 980
+            },
+            "representations" : {
+                "8c29b613-e9ae-474c-8d30-2c6df7a401a0" : {
+                    "bandwidth": 400000,
+                    "codecs": "avc1.4d4015",
+                    "frame_rate": "2997/125",
+                    "height": 240,
+                    "width": 426
+                },
+                "b44a80bc-5874-47c5-967f-5631bd73e322" : {
+                    "bandwidth": 800000,
+                    "codecs": "avc1.4d401e",
+                    "frame_rate": "2997/125",
+                    "height": 480,
+                    "width": 852
+                }
+            }
+        }
+
+    ],
+    "audio_sets" : [
+        {
+            "language" : "en",
+            "mime_type" : "audio/mp4",
+            "segment_template": {
+                "duration": 1.996,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number": 273
+            },
+            "representations": {
+                "6351d983-1838-4c54-8aef-6330102733f4" : {
+                    "bandwidth": 64000,
+                    "codecs": "mp4a.40.2"
+                }
+            }
+        },
+        {
+            "language" : "en",
+            "mime_type" : "audio/mp4",
+            "role" : "Commentary"
+            "segment_template": {
+                "duration": 1.996,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number": 273
+            },
+            "representations": {
+                "a5fb602c-27aa-4557-9714-20874fb814e5" : {
+                    "bandwidth": 64000,
+                    "codecs": "mp4a.40.2"
+                }
+            }
+        },
+        {
+            "language" : "es",
+            "mime_type" : "audio/mp4"
+            "segment_template": {
+                "duration": 1.996,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number": 273
+            },
+            "representations": {
+                "7547f715-4c00-4491-bd6f-2980a8f69a35" : {
+                    "bandwidth": 64000,
+                    "codecs": "mp4a.40.2"
+                }
+            }
+        }
+    ]
+}
