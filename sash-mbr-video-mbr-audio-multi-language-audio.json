@@ -77,7 +77,7 @@
         {
             "language" : "en",
             "mime_type" : "audio/mp4",
-            "role" : "Commentary"
+            "role" : "Commentary",
             "segment_template": {
                 "duration": 1.996,
                 "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
@@ -94,7 +94,7 @@
         },
         {
             "language" : "es",
-            "mime_type" : "audio/mp4"
+            "mime_type" : "audio/mp4",
             "segment_template": {
                 "duration": 1.996,
                 "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
