@@ -9,7 +9,9 @@ SASH is a replacement standard for MPEG DASH's manifest format. Its aims are to 
 
 ### Examples
 
-* [Simple 1 Audio, 1 Video minimal manifst for VOD content.](sash-single-audio-single-video-vod-only.json)
+* [Simple 1 Audio, 1 Video minimal manifest for VOD](sash-single-audio-single-video-vod-only.json) (The simplest SASH manifest feasible)
+* [1 Audio, 2 Video MBR manifest for VOD](sash-mbr-video-single-audio.json) (A fairly common MBR scenario)
+* [Multi angle, MBR Video, Multi language MBR Audio for VOD](sash-mbr-video-single-audio.json) (Demonstrate ALL THE FEATURES!)
 
 ### Is this a Joke?
 
