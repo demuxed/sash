@@ -34,7 +34,7 @@ SASH was born out of frustration of supporting many various and incomplete imple
 ### What concepts does SASH remove from DASH?
 
 * Removes support for a lot of edge cases by removing some fields, including...
-  * ~~`segmentAlignment="true"`~~ Segements in an adaption set **must** be aligned 
+  * ~~`segmentAlignment="true"`~~ Segments in an adaption set **must** be aligned 
   * ~~`startWithSAP="1"`~~ Every Segment **must** start with an SAP
 * Removes `period`s as a top level element
 
