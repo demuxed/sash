@@ -1,0 +1,43 @@
+{
+    "version" : 1,
+    "duration": 300,
+    "video_sets" : [
+        {
+            "mime_type" : "video/mp4",
+            "segment_template" : {
+                "duration": 1.960,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number" : 154
+            },
+            "representations" : {
+                "98bb279a-73bf-40b6-9c6a-f633ce8d2759" : {
+                    "bandwidth": 800000,
+                    "codecs": "avc1.4d401e",
+                    "height": 480,
+                    "width": 852
+                }
+            }
+        }
+    ],
+    "audio_sets" : [
+        {
+            "language" : "en",
+            "mime_type" : "audio/mp4",
+            "segment_template": {
+                "duration": 1.996,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representationID$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representationID$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number": 154
+            },
+            "representations": {
+                "c578f804-74aa-4aa5-887c-8837c81cc11d" : {
+                    "bandwidth": 64000,
+                    "codecs": "mp4a.40.2"
+                }
+            }
+        }
+    ]
+}
