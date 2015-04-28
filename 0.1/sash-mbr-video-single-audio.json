@@ -2,7 +2,7 @@
     "version" : 1,
     "manifest_ttl": 2,
     "duration": 207.958,
-    "video_sets" : [
+    "adaptation_sets" : [
         {
             "mime_type" : "video/mp4",
             "segment_template" : {
@@ -26,9 +26,7 @@
                     "width": 852
                 }
             }
-        }
-    ],
-    "audio_sets" : [
+        },
         {
             "language" : "en",
             "mime_type" : "audio/mp4",
