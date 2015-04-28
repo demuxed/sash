@@ -43,7 +43,6 @@ SASH was born out of frustration of supporting many various and incomplete imple
 * Declaration of manifest TTL
 * Explicit version declaration
 * One manifest format for Live and VOD content, and no byteranges
-* Seperate Audio & Video representation sets
 
 ### Is a new standard the solution?
 
