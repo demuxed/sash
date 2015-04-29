@@ -7,8 +7,8 @@
             "mime_type" : "video/mp4",
             "segment_template" : {
                 "duration": 1.960,
-                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
-                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
                 "start_number": 0,
                 "end_number" : 980
             },
@@ -32,8 +32,8 @@
             "mime_type" : "audio/mp4",
             "segment_template": {
                 "duration": 1.996,
-                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representationID$/init.m4f",
-                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representationID$/segment$number$.m4f",
+                "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
                 "start_number": 0,
                 "end_number": 273
             },
