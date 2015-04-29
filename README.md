@@ -25,6 +25,10 @@ SASH was born out of frustration of supporting many various and incomplete imple
 * [Multi angle, MBR Video, Multi language MBR Audio for VOD](0.1/sash-mbr-video-mbr-audio-multi-language-audio.json) (Multi-language audio, multiple camera angles)
 * [Audio, video, and subtitles](0.1/sash-mbr-video-single-audio-single-subtitle.json) (What about subtitles?)
 
+### How does SASH compare to HLS and DASH?
+
+[How does SASH compare to HLS and DASH?](comparison.md)
+
 ### Is a new standard the solution?
 
 Always.
