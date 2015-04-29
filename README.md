@@ -5,9 +5,7 @@
 
 ### Overview
 
-SASH is a replacement standard for MPEG DASH's manifest format. Its aims are to provide a simpler, JSON based manifest format which learns from DASH's manifest design, but delivers something very Javascript and Media Source Extension friendly.
-
-SASH was born out of frustration of supporting many various and incomplete implementations of MPD parsers, and trying to build a reliable, simple, MSE friendly implementations of players.
+SASH is a new standard for adaptive HTTP streaming. SASH is inspired by MPEG DASH, and is intended to complement DASH, not replace it. Its aims are to provide a simpler, JSON based manifest format which learns from DASH's manifest design, but delivers something Javascript and Media Source Extension friendly.
 
 ### Design Goals
 
