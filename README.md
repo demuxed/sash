@@ -24,19 +24,30 @@ SASH was born out of frustration of supporting many various and incomplete imple
 * [1 Audio, 2 Video MBR manifest for VOD](sash-mbr-video-single-audio.json) (A fairly common real world scenario)
 * [Multi angle, MBR Video, Multi language MBR Audio for VOD](sash-mbr-video-single-audio.json) (Demonstrate ALL THE FEATURES!)
 
-### What concepts does SASH borrow from DASH?
+### What does SASH add to DASH?
 
-* Segement Template
-  * But adds an "end_segment" to signal the end of a representation set.
-* Representation Set
-* Segmented, Fragmented mp4 media (FMP4)
+* `end_segment` to signal the end of a representation set
+* `manifest_ttl` to define manifest refresh behavior
 
 ### What concepts does SASH remove from DASH?
 
+* Multiple profiles
 * Removes support for a lot of edge cases by removing some fields, including...
   * ~~`segmentAlignment="true"`~~ Segments in an adaption set **must** be aligned 
   * ~~`startWithSAP="1"`~~ Every Segment **must** start with an SAP
 * Removes `period`s as a top level element
+* `scanType`, `sar`, `timescale`
+
+### What concepts does SASH borrow from HLS?
+
+* Segmented WebVTT for subtitles
+
+### What HLS concepts are not included in SASH?
+
+* Fixed binding of audio representation to video representation
+* AUTOSELECT on alternate adaptation sets
+* DEFAULT setting on alternate adaptation sets
+* TS media
 
 ### What concepts are new to SASH?
 

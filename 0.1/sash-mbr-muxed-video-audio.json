@@ -1,0 +1,32 @@
+{
+    "version" : 1,
+    "manifest_ttl": 2,
+    "duration": 207.958,
+    "adaptation_sets" : [
+        {
+            "mime_type" : "video/mp4",
+            "language" : "en",
+            "segment_template" : {
+                "duration": 1.960,
+                "init": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/init.m4f",
+                "media": "http://localhost:8080/ace6123d-021d-41e2-bc31-4a082df189f9/$representation$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number" : 980
+            },
+            "representations" : {
+                "c6a8533d-ff8f-437e-80d7-780f86a07ecd" : {
+                    "bandwidth": 400000,
+                    "codecs": ["avc1.4d4015","mp4a.40.2"],
+                    "height": 240,
+                    "width": 426
+                },
+                "98bb279a-73bf-40b6-9c6a-f633ce8d2759" : {
+                    "bandwidth": 800000,
+                    "codecs": ["avc1.4d401e","mp4a.40.2"],
+                    "height": 480,
+                    "width": 852
+                }
+            }
+        }
+    ]
+}
