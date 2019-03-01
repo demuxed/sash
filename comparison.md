@@ -2,7 +2,7 @@
 
 ### What does SASH add to DASH?
 
-* `end_segment` to signal the end of a representation set
+* `end_segment` to signal the last segment of a representation set
 * `manifest_ttl` to define manifest refresh behavior
 
 ### What concepts does SASH remove from DASH?
@@ -17,13 +17,14 @@
 ### What concepts does SASH borrow from HLS?
 
 * Segmented WebVTT for subtitles
+* Durations declared in a sensible, consistent format
 
 ### What HLS concepts are not included in SASH?
 
-* Fixed binding of audio representation to video representation
+* Binding of audio representation to video representation
+  * And thus, forcing of all adaptation sets being the same size
 * AUTOSELECT on alternate adaptation sets
 * DEFAULT setting on alternate adaptation sets
-* TS media
 
 ### What concepts are new to SASH?
 
