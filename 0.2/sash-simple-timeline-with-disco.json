@@ -1,0 +1,48 @@
+{
+    "sash_version" : 2,
+    "presentation_duration": 300,
+    "video" : [
+        {
+            "container" : "fmp4",
+            "segment_timeline" : {
+                "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$rendition$/init.m4f",
+                "timeline" : [
+                    { "media": "http://example.com/$rendition$/absolute-segment-1.m4f" },
+                    { "media": "http://example.com/$rendition$/absolute-segment-2.m4f" },
+                    { "media": "http://example.com/$rendition$/absolute-segment-3.m4f" },
+                    { 
+                        "discontinuity" : true,
+                        "media": "http://example.com/$rendition$/absolute-segment-4.m4f"
+                    },
+                    { "media": "$rendition$/manifest-relative-segment-5.m4f" }
+                ]
+            },
+            "renditions" : {
+                "video-540p-800k" : {
+                    "bandwidth": 800000,
+                    "codecs": "avc1.4d401e",
+                    "height": 480,
+                    "width": 852
+                }
+            }
+        }
+    ],
+    "audio": [
+        {
+            "container" : "fmp4",
+            "segment_template": {
+                "duration": 1.996,
+                "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$rendition$/init.m4f",
+                "media": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$rendition$/segment$number$.m4f",
+                "start_number": 0,
+                "end_number": 154
+            },
+            "renditions": {
+                "audio-64k" : {
+                    "bandwidth": 64000,
+                    "codecs": "mp4a.40.2"
+                }
+            }
+        }
+    ]
+}
