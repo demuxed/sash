@@ -3,7 +3,7 @@
     "presentation_duration": 300,
     "video" : [
         {
-            "container" : "fmp4",
+            "mime_type" : "video/mp4",
             "segment_timeline" : {
                 "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$rendition$/init.m4f",
                 "timeline" : [
@@ -29,7 +29,7 @@
     ],
     "audio": [
         {
-            "container" : "fmp4",
+            "mime_type" : "video/mp4",
             "segment_template": {
                 "duration": 1.996,
                 "init": "http://example.com/ace6123d-021d-41e2-bc31-4a082df189f9/$rendition$/init.m4f",
