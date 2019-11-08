@@ -6,7 +6,7 @@
 
 SASH is a new standard for adaptive HTTP streaming. SASH is inspired by [MPEG DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) and [Apple HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming), and is intended to complement them. 
 
-Its aims are to provide a simpler, JSON based manifest format which learns from DASH and HLS's manifest design, but delivers something Javascript and Media Source Extensions friendly.
+Its aims are to provide a simpler, JSON based manifest format which learns from DASH and HLS's manifest design, but delivers something JavaScript and Media Source Extensions friendly.
 
 SASH is designed to be owned and developed by the community, and not be limited by patent pools or usage restrictions.
 
