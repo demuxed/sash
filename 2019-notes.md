@@ -8,14 +8,6 @@ I've also started putting together what I think the resulting manifests for thes
 
 We should be container and codec agnostic. SASH should be a solution for people delivering any media, in any container a user wants. We're opinionated about manifest formats and nothing else.
 
-That said, I think being explicit about signalling codec and container is important. DASH's signalling of container is poor (communicated via MIME type), and currently we're using the same approach. I'd suggest we rename `mime_type` to `container`, and make it simple enum of:
-* webm
-* fmp4
-* cmaf
-* ts
-
-FIXME: I just re-read the MSE specification, and actually, we should use MIME type because that's what you need to pass to `MediaSource.isTypeSupported`
-
 TODO: Can/should you have mixed container adaptation sets or manifests?
 
 ## Ad insertion / Discos
@@ -68,6 +60,8 @@ Some thought needs to be put into future extensibility if we do this, along with
 
 We could extend this further however to make each adaptation set a named key, but I think this takes it too far.
 
+TODO: What should we do about muxed audio / video usecases?
+
 ## "User Data"
 
 For the longest time when I've built systems, providing a specific space for vendor-specific data has been a life-saver. Usually we've implemented this as a list of key-value pairs that have no reserved function. 
@@ -97,9 +91,7 @@ Lots of people want segment lists or timelines, and I can understand why. Could 
 
 I don't think we should use DASH terminology if there's better industry terminology.
 
-Replacing `representation` with `rendition` is an obvious improvement in my book. I think removing adaptation_sets is easy if we [make the changes I suggested above](# Adaptation set grouping).
-
-Coming up with better/alternative name for segment_template / segment_timeline might be harder.
+Consider coming up with better/alternative name for segment_template / segment_timeline.
 
 ## Progressive MP4/WebM etc.
 
